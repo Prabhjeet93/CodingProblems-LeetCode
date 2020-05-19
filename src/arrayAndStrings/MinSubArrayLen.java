@@ -6,7 +6,6 @@ public class MinSubArrayLen {
         if (nums == null || nums.length == 0) {
             return 0;
         }
-
         int left = 0;
         int sum = 0;
         int rst = Integer.MAX_VALUE;
