@@ -2,14 +2,13 @@ package arrayAndStrings;
 
 public class CommonPrefix {
 	 public static String longestCommonPrefix(String[] strs) {
-	        
-	        
-	       String prefix = strs[0]; 
+	       
 	        int n = strs.length;
 	  if(n==0) {
 		  return "";
 	  }
 	  else {
+        String prefix = strs[0];
 	        for (int i = 1; i <= n - 1; i++) { 
 	           prefix = commonPrefix(prefix, strs[i]); 
 	         } 
@@ -35,7 +34,6 @@ public class CommonPrefix {
 	  
 	        return (result); 
 	    } 
-
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		String[] str = {"flow", "mlmc", "flew"};
